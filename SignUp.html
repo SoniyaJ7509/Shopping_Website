@@ -1,0 +1,89 @@
+<html>
+<head>
+<script type="text/javascript">
+function SignUp()
+{
+  if(document.getElementById("name").value=="")
+   alert("Name is required...");
+  else if(document.getElementById("pass").value=="")
+   alert("Password is required...");
+  else if(document.getElementById("cpass").value=="")
+   alert("Confirm password is required...");
+  else if(document.getElementById("address").value=="")
+   alert("Address is required...");
+ else if(document.getElementById("email").value=="")
+   alert("Email is required...");
+ else if(document.getElementById("phone").value=="")
+   alert("Phone Number is required...");
+  else if(document.getElementById("pass").value!=document.getElementById("cpass").value)
+   alert("Password doesn't match.");
+  else
+   alert("Successfully Registered!!!");
+}
+</script>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ADD8E6; /* Light blue background */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333; /* Dark gray text color */
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFF; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db; /* Blue button color */
+            border: none;
+            border-radius: 5px;
+            color: #FFF; /* White text color */
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+      
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form>
+        <input type="text" id="name" placeholder="Name">
+        <input type="password" id="pass" placeholder="Password">
+        <input type="password" id="cpass" placeholder="Confirm Password">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="address" rows="5" placeholder="Address"></textarea>
+        <textarea id="another-address" rows="5" placeholder="Another Address"></textarea>
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="button" value="Register" onclick="SignUp()">
+    </form>
+</body>
+</html>
+

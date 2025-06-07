@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fashionista</title>
+    <style>
+        body {
+            background: url('model7.jpeg');
+            background-size: cover;
+            font-family: Helvetica;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #fff;
+            position: fixed;
+            display: flex;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            align-items: center;
+        }
+
+        nav h2 {
+            margin-left: 10px;
+            cursor: pointer;
+            color: #000;
+        }
+
+        nav span {
+            font-size: 1.2em;
+            color: #6495ED;
+        }
+
+        nav ul {
+            flex: 1;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 4px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #6495ED;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        h3 {
+            text-align: center;
+            color: #FFFFE0;
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            color: #000;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #000;
+            border: none;
+            color:white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .signup-btn {
+            text-decoration: none;
+            color: white;
+        }
+
+        .signup-btn:hover {
+            text-decoration: underline;
+        }
+     .dropdown-indicator 
+   {
+      position: relative;
+      color: #6495ED;
+    }
+
+    .dropdown-indicator::after 
+   {
+      content: "▼";
+      color: #6495ED;
+      font-size: 1.5em;
+      margin-left: 5px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+   
+    .dropdown-options
+    {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #6495ED;
+      border-radius: 4px;
+    }
+
+   .dropdown-indicator:hover .dropdown-options
+   {
+      display: block;
+    }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <h2><span>FASHIONISTA</span></h2>
+        <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li class="dropdown-indicator">
+                CATEGORIES
+                <div class="dropdown-options">
+                    <a href="Footwear.html">Footwear</a>
+                    <a href="women.html">Fashionista Finds</a>
+                    <a href="Accessories.html">Accessories</a>
+                </div>
+            </li>
+            <li><a href="Contact Us.html">CONTACT US</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+            <li><a href="Feedback.html">FEEDBACK</a></li>
+        </ul>
+    </nav>
+</header>
+
+<br><br><br><br>
+
+<center><h1>About Us</h1></center><br>
+<p><h3>Fashionista is a brand committed to empowering customers with top-notch fashion that blends innovation and responsibility.</h3></p>
+<br><br><br>
+<p><h3>We are more than just a fashion brand. We are a community that celebrates individuality and empowers you to embrace your uniqueness. <br>We understand that dressing up is a creative act and we aim to be your trusted partner in it with our<br> thoughtfully curated range of premium yet affordable fashion.<br> We offer the latest trends and high-quality clothing to elevate your style. Our curated collections cater to every taste and occasion, from classic to cutting-edge looks. Empowering you to express your unique personality through fashion is our mission.</h3></p>
+
+<footer>
+    <a href="Login.html" class="login-btn"><input type="button" value="Login"></a>
+   <a href="SignUp.html" class="signup-btn"><input type="button" value="Sign Up"></a>
+</footer>
+</body>
+</html>

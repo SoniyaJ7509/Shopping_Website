@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet">
+  <style>
+    body 
+  {
+      background: url('model19.jpeg');
+      background-size: cover; 
+      font-family: Helvetica;
+    }
+
+    nav 
+  {
+      background-color: #fff;
+      position: fixed;
+      display: flex;
+      top: 0;
+      left: 0;
+      width: 100%; 
+      height: 60px;
+      align-items: center;
+    }
+
+    nav h2 
+   {
+      margin-left: 10px;
+      cursor: pointer;
+      color: #000;
+    }
+
+    nav span
+   {
+      font-size: 1.2em;
+      color: #6495ED;
+    }
+
+    nav ul 
+   {
+      flex: 1;
+      text-align: right;
+    }
+
+    nav ul li 
+   {
+      display: inline-block;
+      margin: 10px 20px;
+      padding: 4px;
+    } 
+
+    nav ul li a 
+   {
+      text-decoration: none;
+      color: #6495ED;
+      font-size: 1.0em;
+    }
+
+  
+    .dropdown-indicator 
+   {
+      position: relative;
+      color: #6495ED;
+    }
+
+    .dropdown-indicator::after 
+   {
+      content: "▼";
+      color: #6495ED;
+      font-size: 1.5em;
+      margin-left: 5px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+   
+    .dropdown-options
+    {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #6495ED;
+      border-radius: 4px;
+    }
+
+   .dropdown-indicator:hover .dropdown-options
+   {
+     
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2><span>FASHIONISTA</span></h2>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li class="dropdown-indicator">
+          CATEGORIES
+          <div class="dropdown-options">
+            <a href="Footwear.html">Footwear</a>
+            <a href="women.html">Fashionista Finds</a>
+            <a href="Accessories.html">Accessories</a>
+          </div>
+        </li>
+        <li><a href="Contact Us.html">CONTACT US</a></li>
+        <li><a href="About Us.html">ABOUT US</a></li>
+        <li><a href="Feedback.html">FEEDBACK</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>

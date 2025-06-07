@@ -1,0 +1,127 @@
+<html>
+<head>
+<style>
+body{
+font-family:Helvetica;
+}
+ nav{
+    background-color:#fff;
+    position: fixed;
+    display: flex;
+   top:0;
+   left:0;
+  width: 100%; 
+height: 60px;
+  align-items: center;
+}
+nav h2{
+  margin-left: 10px;
+  cursor: pointer;
+  color: #000;
+}
+
+nav span{
+font-size:1.2em;
+color: #6495ED;
+
+}
+
+
+nav ul li{
+display: inline-block;
+margin: 10px 20px;
+padding: 4px;
+
+} 
+
+nav ul li a{
+text-decoration:none;
+color:#6495ED;
+font-size:1.1em;
+}
+
+h1{
+color:white;
+}
+
+nav ul{
+flex:1;
+text-align:right;
+}
+
+p{
+color:#000080;
+}
+
+h3{
+color:white;
+}
+
+ .dropdown-indicator 
+   {
+      position: relative;
+      color: #6495ED;
+    }
+
+    .dropdown-indicator::after 
+   {
+      content: "▼";
+      color: #6495ED;
+      font-size: 1.5em;
+      margin-left: 5px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+   
+    .dropdown-options
+    {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #6495ED;
+      border-radius: 4px;
+    }
+
+   .dropdown-indicator:hover .dropdown-options
+   {
+     display: block;
+    }
+
+</style>
+</head>
+<body  bgcolor="SlateGray">
+<header>
+<nav>
+<h2><span>FASHIONISTA</span></h2>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li class="dropdown-indicator">
+          CATEGORIES
+          <div class="dropdown-options">
+            <a href="Footwear.html">Footwear</a>
+            <a href="women.html">Fashionista Finds</a>
+            <a href="Accessories.html">Accessories</a>
+          </div>
+        </li>
+        <li><a href="Contact Us.html">CONTACT US</a></li>
+        <li><a href="About Us.html">ABOUT US</a></li>
+        <li><a href="Feedback.html">FEEDBACK</a></li>
+      </ul>
+</nav>
+</header>
+<br><br><br><br>
+<center><h1>Contact Us</h1></center><br>
+<h3>GET IN TOUCH</h3>
+<p>-Email: support@fashonista.com</p>
+<p>-Facebook: https://www.facebook.com/fashionistaindia</p>
+<p>-Instagram: https://www.instagram.com/fashionista in</p>
+<p>-Contact Number: +91-8252479021</p><br><br>
+<h3>Our Office in India</h3>
+<p>789 Serenity Lane, Tranquility Meadows, New Delhi-110001</p>
+<p>Phone: +91-8252479021</p>
+</body>
+</html>

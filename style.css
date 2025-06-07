@@ -1,0 +1,45 @@
+body{
+     
+     background:url('model1.jpeg');
+     background-size: cover;
+}
+
+ nav{
+    
+    background-color:#fff;
+    position: fixed;
+   display: flex;
+   top:0;
+   left:0;
+  width: 100%; 
+  align-items: center;
+}
+nav h2{
+  margin-left: 10px;
+  cursor: pointer;
+  color: #000;
+}
+
+
+nav ul{
+flex:1;
+text-align:center;
+}
+
+nav ul li{
+display: inline-block;
+margin: 10px 20px;
+padding: 4px;
+
+} 
+
+nav ul li a{
+text-decoration:none;
+color:#000;
+}
+
+
+
+
+
+

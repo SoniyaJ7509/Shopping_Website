@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+ nav{
+    
+    background-color:#fff;
+    position: fixed;
+   display: flex;
+   top:0;
+   left:0;
+  width: 100%; 
+height: 60px;
+  align-items: center;
+}
+nav h2{
+  margin-left: 10px;
+  cursor: pointer;
+  color: #000;
+}
+
+nav span{
+font-size:1.5em;
+color: #6495ED;
+
+}
+
+nav ul{
+flex:1;
+text-align:right;
+}
+
+nav ul li{
+display: inline-block;
+margin: 10px 20px;
+padding: 4px;
+
+} 
+
+nav ul li a{
+text-decoration:none;
+color:#6495ED;
+font-size:1.1em;
+}
+</style>
+<script type="text/javascript">
+function Form()
+{
+ if(document.getElementById("name").value=="")
+   alert("Name is required...");
+  else if(document.getElementById("email").value=="")
+   alert("Email is required...");
+  else if(document.getElementById("feedback").value=="")
+   alert("Please give your feedback...");
+  else
+   alert("Thank You for your Feedback!!!!Enjoy Shopping.....");
+}
+</script>
+</head>
+<body bgcolor="#FFDAB9">
+<header>
+<nav>
+</h2><Span>FASHIONISTA</Span></h2>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="categories.html">Categories</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Feedback.html">Feedback</a></li>
+</ul>
+</nav>
+</header>
+<br><br><br><br>
+<center><h1>User Experience Feedback</h1></center><br>
+<form method="post">
+Name :<input type="text" id="name" name="name" required><br><br>
+Email :<input type="email" id="email" name="email" required><br><br>
+Your Feedback :<textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+Rating :1<input type="radio" name="rating">
+2<input type="radio" name="rating">
+3<input type="radio" name="rating">
+4<input type="radio" name="rating">
+5<input type="radio" name="rating"><br><br>
+<input type="Submit" name="button" onclick="Form()">
+</form>
+</body>
+</html>

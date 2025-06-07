@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            max-width: 300px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333; 
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db; 
+            border: none;
+            border-radius: 5px;
+            color: #FFF; /* White text color */
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9; 
+        }
+
+        .error-message {
+            color: #ff0000; 
+            margin-top: -10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+        <div class="error-message" id="error-message"></div>
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var errorMessage = "";
+
+            if (!username.trim()) {
+                errorMessage += "Enter Your Name.\n";
+            }
+
+            if (!password.trim()) {
+                errorMessage += "Enter Correct Password.\n";
+            }
+
+            if (errorMessage) {
+                document.getElementById("error-message").textContent = errorMessage;
+                return false; // Prevent form submission
+            } else {
+                alert("You've Logged in Successfully!!!");
+                return true; // Allow form submission
+            }
+        }
+    </script>
+</body>
+</html>
